@@ -1,0 +1,29 @@
+# Jupyter Tutroial
+
+## 1. What is Jupyter Notebook?
+## 2. Heading & Description
+## 3. Live Code Example
+## 4. Embedded code
+## 5. Equations
+## 6. Visualization
+### 6.1 Image
+### 6.2 Video
+### 6.3 Table
+### 6.4 Chart
+## 7. Perfomance Check
+
+## 3. Live Code Example(예)
+
+a=2
+
+def f(a): # f 함수를 만듬
+    return a**2 # 들여쓰기 필수
+
+f(2)
+
+# Equations (예)
+
+$e^{i\pi} + 1 = 0$
+
+$$e^x=\sum_{i=0}^\infty \frac{1}{i!}x^i$$
+
