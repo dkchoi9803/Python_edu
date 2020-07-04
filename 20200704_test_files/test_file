@@ -1,0 +1,26 @@
+print('Hello World')
+
+2+2
+
+3-2
+
+13*3
+
+15/3
+
+type(4)
+
+type(3.3)
+
+type("Hello Wolrd")
+
+a=1
+
+a
+
+id(a)
+
+b=a
+
+b
+
