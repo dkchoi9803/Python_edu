@@ -208,3 +208,134 @@ TypeError                                 Traceback (most recent call last)
 ----> 1 my_tuple[-1] = 100
 
 TypeError: 'tuple' object does not support item assignment
+
+
+### 사전 (Dictionaries)
+- 딕셔너리로 키(key)-값(value) 조합 형태의 리스트를 만들 수 있다.
+- 딕셔너리에서는 항목을 찾을 때 키(key)를 인자로 사용한다.
+- 딕셔너리에서 저장된 순서는 중요시하지 않는다.
+- 딕셔너리는 중괄호 {       } 로 만든다.
+
+name_age = {'kim':20, 'lee' : 25}
+print(name_age['kim'])
+$20
+
+
+- key() : key리스트
+- value() : 값 리스트
+- item() : 딕셔너리 각 항목을 튜플로 만들고 전체 항목을 리스트로 반환(검색 속도를 빠르게 할 목적)
+
+print(name_age.keys())
+print(name_age.values())
+print(name_age.items())
+
+$dict_keys(['kim', 'lee'])
+$dict_values([20, 25])
+$dict_items([('kim', 20), ('lee', 25)])
+
+print("kim" in name_age)
+print("park" in name_age)
+
+$True
+$False
+
+name_age['song'] = 35
+print(name_age)
+${'kim': 20, 'lee': 25, 'song': 35}
+
+x = range(1,20,2)
+for i in x:
+    print(i*10)
+
+%10
+30
+50
+70
+90
+110
+130
+150
+170
+190
+
+## for 루프
+- 동작을 반복할 때 for 루프를 사용한다.
+- for 문장의 끝에는 ':'가 있어야 하며 for문이 적용되는 블록(block)은 반드시 들여쓰기(indentation)을 해야한다.
+
+items = [1, 5, 100]
+for x in items:
+    print(x**3)
+    
+$1
+125
+1000000
+
+for i in range(10): #  [0 1 2 3 4 5 6 7 8 9]
+    print (i*1000)
+    
+$0
+1000
+2000
+3000
+4000
+5000
+6000
+7000
+8000
+9000
+
+for x in (1, 3, 5, 10): # 사각형의 넓이를 구하는 for 루프 문
+    print(x, "'s square = ", x*x)
+    
+$1 's square =  1
+3 's square =  9
+5 's square =  25
+10 's square =  100
+
+# if 문
+
+x=17
+if x > 10:
+    print("x > 10")
+    print('---------')
+elif x > 3:
+    print("10 >= x < 3")
+else:
+    print(" x<=3 ")
+    
+$x > 10
+---------
+
+
+# sort
+x = [2,1,3,5,4,]
+x.sort()
+print(x)
+$[1, 2, 3, 4, 5]
+
+- 리스트의 내용이 변경되지 않게 하려면 : sorted() 사용
+
+x = [2,1,3,5,4]
+y = sorted(x)
+print(x)
+print(y)
+$[2, 1, 3, 5, 4]
+[1, 2, 3, 4, 5]
+
+- 내림차순으로 정렬 : reverse=True
+
+x = [2,1,3,5,4]
+x.sort(reverse=True)
+print(x)
+$[5, 4, 3, 2, 1]
+
+x = [2,1,3,5,4]
+x.sort(reverse=False)
+print(x)
+$[1, 2, 3, 4, 5]
+
+
+
+
+
+
