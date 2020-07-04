@@ -334,8 +334,93 @@ x.sort(reverse=False)
 print(x)
 $[1, 2, 3, 4, 5]
 
+- sort_values() : DataFrame을 정렬하는 메소드
+- 특정 열을 기준으로 정렬할 수 있다.
+- by: 기준 열, ascending : 오름차순/내림차순
 
+import pandas as pd
 
+df = pd.DataFrame({'순서':[1,2,3],
+                   '이름':['park','lee','choi'],
+                   '나이':[30,20,40]})
+df.sort_values(by=['순서'], ascending=True)
+$	순서	이름	나이
+0	1	park	30
+1	2	lee	20
+2	3	choi	40
 
+# 들여쓰기(Indentation)
+- 들여쓰기는 보통 Tab 사용, Tab의 크기는 블럭내에서 통일시켜야 한다.
+- sapce, returen 은 (), {}블럭 내부에서는 부시된다.
+- 따라서 문장 길이가 긴 경우, 보기 쉽게 여러 줄로 표시해도 동작은 동일한다.
+- (), {}블럭이 없는 경우, 줄이 바뀌면 문장 끝에 역 슬래시 \ 사용해야 한다.
 
+x= [[1,2,3],
+    [4,5,6,],
+    [7,8,9]]
+print(x)
+$[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+x=3+4+5+6+77\
+  +3
+print(x)
+$98
+
+# Module 설치
+
+- Python 기본 기능 이외에 추가 기능을 사용하려면 해당 module을 설치해야 한다.
+    * 해당 module을 server에 설치하는 것은 한번만 하면 된다.
+    * pip install
+- 설치된 module을 Python에서 사용하려면 profram에서 import 해야한다.
+    * import matplotlib.pyplot as plt
+    
+# 함수 정의
+- def:임의의 함수를 정의
+- 함수 인자의 값을 default 값으로 지정할 수 있다.
+    * 함수 호출 시에 인자 값을 주지 않으면 dufault 값으로 수행
+- 함수 수행 결과로 2개 이상의 값을 return하고자 할때, tuple로 처리하면 편리
+
+def double(x):
+    return x*2
+
+double(5)
+$10
+
+def double(x=100):
+    return x*2
+
+double()
+$200
+
+def double(x=100):
+    return x*2
+
+double()
+$4
+
+double()
+$200
+
+def double_triple(x):
+    return x*2, x*3
+
+x, y = double_triple(4)
+print(x, y)
+$8, 12
+
+# matplotlib
+
+- Python의 시각화 라이브러리
+- %matplotlib inline : graph를 현재의 Jupyter notebook 화면에 직접 나타나게 그리라는 의미
+
+import numpy as np
+import matplotlib.pyplot as plt
+%matplotlib inline
+n=10
+y=np.random.randn(n)
+plt.plot(range(n), y)
+plt.xlabel('time')
+plt.ylabel('Random_Value')
+
+Text(0, 0.5, 'Random_Value')
 
