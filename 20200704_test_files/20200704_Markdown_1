@@ -21,6 +21,8 @@ def f(a): # f 함수를 만듬
 
 f(2)
 
+여기부터 Markdown 예제 라인 전부 Markdown 셀
+
 # Equations (예)
 
 $e^{i\pi} + 1 = 0$
