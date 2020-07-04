@@ -27,3 +27,29 @@ $e^{i\pi} + 1 = 0$
 
 $$e^x=\sum_{i=0}^\infty \frac{1}{i!}x^i$$
 
+3. Live Code Example(예)
+a=2
+ # 들여쓰기 필수
+def f(a): # f 함수를 만듬
+    return a**2 # 들여쓰기 필수
+f(2)
+4
+
+Equations (예)
+$e^{i\pi} + 1 = 0$    %𝑒𝑖𝜋+1=0
+$$e^x=\sum_{i=0}^\infty \frac{1}{i!}x^i$$  %𝑒𝑥=∑𝑖=0∞1𝑖!𝑥𝑖
+Table
+
+| This | is  |
+|------|-----|
+|  a   |table|
+
+This	is
+a	table
+
+image
+
+pwd   $경로 확인 명령어
+'C:\\Users\\Administrator\\Desktop\\test'
+
+<img src="data/Trent-XWB.png" />    % <img src="directory" />
