@@ -76,3 +76,14 @@ a=52345, b=66, result=7
  
 print(f"a = {a}와, b = {b}를 나누었을때, result={result} 가 나머지로 남습니다.")
 a = 52345와, b = 66를 나누었을때, result=7 가 나머지로 남습니다.
+
+a=52345
+b=66
+
+result=a%b
+
+print(f"a = {a}와, b = {b}를 나누었을때, result={result} 가 나머지로 남습니다.")
+
+ship_handle = 1
+ship_handle
+
