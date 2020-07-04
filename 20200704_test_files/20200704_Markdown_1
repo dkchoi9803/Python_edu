@@ -55,3 +55,11 @@ pwd   $경로 확인 명령어
 'C:\\Users\\Administrator\\Desktop\\test'
 
 <img src="data/Trent-XWB.png" />    % <img src="directory" />
+
+# Performance Check
+
+%timeit 3+4
+
+%%timeit
+a = [1, 2, 3]
+a = [x+1 for x in a]
